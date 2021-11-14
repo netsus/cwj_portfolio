@@ -747,7 +747,7 @@ HJ working on this
       rgba(104, 89, 66, 0.8) 0px,
       rgba(104, 69, 69, 0.8) 90%
     ),
-    url(../images/laptop.jpg);
+    url(/images/laptop.jpg);
   background-position-x: initial, 50%;
   background-position-y: initial, center;
   border-radius: 0;
