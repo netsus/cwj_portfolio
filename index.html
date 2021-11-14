@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="favicon.ico" />
-    <title>Treviso - Clean & Elegant Onepage Multipurpose Bootstrap HTML</title>
+    <title>조원준 포트폴리오</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link
@@ -16,7 +16,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
     <!-- Custom styles for this template -->
-    <link href="css/style_original.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body id="page-top">
     <!-- Navigation -->
@@ -46,19 +46,16 @@
               <a id="navbar_right" href="#page-top"></a>
             </li>
             <li>
-              <a id="navbar_right" class="page-scroll" href="#about">About</a>
-            </li>
-            <li>
               <a id="navbar_right" class="page-scroll" href="#portfolio"
-                >Portfolio</a
+                >Projects</a
               >
             </li>
             <li>
-              <a id="navbar_right" class="page-scroll" href="#team">Team</a>
+              <a id="navbar_right" class="page-scroll" href="#about">Skills</a>
             </li>
             <li>
-              <a id="navbar_right" class="page-scroll" href="#contact"
-                >Contact</a
+              <a id="navbar_right" class="page-scroll" href="#team"
+                >Archiving</a
               >
             </li>
           </ul>
@@ -78,7 +75,7 @@
     </nav>
 
     <section id="portfolio">
-      <div class="container">
+      <div class="container project_grid">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-title">
@@ -86,7 +83,8 @@
             </div>
           </div>
         </div>
-        <div class="row row-0-gutter">
+
+        <div class="project_flex">
           <div class="col-md-6 col-0-gutter">
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
@@ -97,7 +95,7 @@
                 />
                 <figcaption>
                   <h2>에어비앤비 클론</h2>
-                  <p>Branding, Design</p>
+                  <p>Django를 사용한 에어비앤비 클론</p>
                   <a href="#" data-toggle="modal" data-target="#Modal-1"
                     >View more</a
                   >
@@ -124,8 +122,7 @@
               </figure>
             </div>
           </div>
-        </div>
-        <div class="row row-0-gutter">
+
           <div class="col-md-6 col-0-gutter">
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
@@ -163,8 +160,7 @@
               </figure>
             </div>
           </div>
-        </div>
-        <div class="row row-0-gutter">
+
           <div class="col-md-6 col-0-gutter">
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
@@ -195,7 +191,7 @@
                 <figcaption>
                   <h2>쿠팡재고알림 카톡보내기</h2>
                   <p>Branding, Web Design</p>
-                  <a href="#" data-toggle="modal" data-target="#Modal-2"
+                  <a href="#" data-toggle="modal" data-target="#Modal-6"
                     >View more</a
                   >
                 </figcaption>
@@ -207,95 +203,67 @@
     </section>
 
     <section id="about" class="mz-module">
-      <div class="container light-bg">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-title">
-              <h2>ABOUT</h2>
+              <h2>Skills</h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <div class="mz-about-container">
-              <p>
-                A creative agency based on Candy Land, ready to boost your
-                business with some beautifull templates. Lattes Agency is one of
-                the best in town see more you will be amazed.
-              </p>
-            </div>
+
+        <div class="row row-0-gutter skills_collect">
+          <div class="mz-module-about" id="skill_1">
+            <i class="fa fa-briefcase ot-circle"></i>
+            <h3>Front End</h3>
           </div>
-          <div class="col-md-6">
-            <!-- skill bar item -->
-            <div class="skillbar-item">
-              <div class="skillbar" data-percent="90%">
-                <h3>Web design</h3>
-                <div class="skillbar-bar">
-                  <div class="skillbar-percent" style="width: 90%"></div>
-                </div>
-              </div>
-            </div>
-            <!-- skill bar item -->
-            <div class="skillbar-item">
-              <div class="skillbar" data-percent="80%">
-                <h3>Development</h3>
-                <div class="skillbar-bar">
-                  <div class="skillbar-percent" style="width: 80%"></div>
-                </div>
-              </div>
-            </div>
-            <!-- skill bar item -->
-            <div class="skillbar-item">
-              <div class="skillbar" data-percent="85%">
-                <h3>Photography</h3>
-                <div class="skillbar-bar">
-                  <div class="skillbar-percent" style="width: 85%"></div>
-                </div>
-              </div>
-            </div>
-            <!-- skill bar item -->
-            <div class="skillbar-item">
-              <div class="skillbar" data-percent="70%">
-                <h3>Marketing</h3>
-                <div class="skillbar-bar">
-                  <div class="skillbar-percent" style="width: 70%"></div>
-                </div>
-              </div>
-            </div>
+          <div class="skills_column" id="content_1">
+            <img src="images/skills/html.png" alt="" />
+            <img src="images/skills/css.png" alt="" />
+            <img src="images/skills/JS.png" alt="" />
+            <img src="images/skills/react.png" alt="" />
+            <img src="images/skills/Tailwind.png" alt="" />
           </div>
-        </div>
-        <div class="row row-0-gutter">
-          <!-- about module -->
-          <div class="col-md-3 col-0-gutter mz-about-default text-center">
-            <div class="mz-module-about">
-              <i class="fa fa-briefcase ot-circle"></i>
-              <h3>Web Development</h3>
-            </div>
-          </div>
+
           <!-- end about module -->
           <!-- about module -->
-          <div class="col-md-3 col-0-gutter mz-about-dark text-center">
-            <div class="mz-module-about">
-              <i class="fa fa-photo ot-circle"></i>
-              <h3>Visualisation</h3>
-            </div>
+
+          <div class="mz-module-about" id="skill_2">
+            <i class="fa fa-photo ot-circle"></i>
+            <h3>Back End</h3>
           </div>
+          <div class="skills_column" id="content_2">
+            <img src="images/skills/Django.png" alt="" />
+            <img src="images/skills/python.png" alt="" />
+            <img src="images/skills/pandas.png" alt="" />
+            <img src="images/skills/mariadb.png" alt="" />
+            <img src="images/skills/postgre.png" alt="" />
+          </div>
+
           <!-- end about module -->
           <!-- about module -->
-          <div class="col-md-3 col-0-gutter mz-about-default text-center">
-            <div class="mz-module-about">
-              <i class="fa fa-camera-retro ot-circle"></i>
-              <h3>Photography</h3>
-            </div>
+
+          <div class="mz-module-about" id="skill_3">
+            <i class="fa fa-camera-retro ot-circle"></i>
+            <h3>Deployment</h3>
           </div>
+          <div class="skills_column" id="content_3">
+            <img src="images/skills/netlify.png" alt="" />
+            <img src="images/skills/navercloud.jpg" alt="" />
+          </div>
+
           <!-- end about module -->
           <!-- about module -->
-          <div class="col-md-3 col-0-gutter mz-about-dark text-center">
-            <div class="mz-module-about">
-              <i class="fa fa-cube ot-circle"></i>
-              <h3>UI/UX Design</h3>
-            </div>
+
+          <div class="mz-module-about" id="skill_4">
+            <i class="fa fa-cube ot-circle"></i>
+            <h3>Version Control</h3>
           </div>
+          <div class="skills_column" id="content_4">
+            <img src="images/skills/github.png" alt="" />
+            <img src="images/skills/git.png" alt="" />
+          </div>
+
           <!-- end about module -->
         </div>
       </div>
@@ -307,156 +275,75 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-title">
-              <h2>Our Team</h2>
+              <h2>Archiving</h2>
             </div>
           </div>
         </div>
-        <div class="row">
-          <!-- team member item -->
-          <div class="col-md-4">
-            <div class="team-item">
-              <div class="team-image">
-                <img
-                  src="images/demo/author-2.jpg"
-                  class="img-responsive"
-                  alt="author"
-                />
-              </div>
-              <div class="team-text">
-                <h3>TOM BEKERS</h3>
-                <div class="team-position">CEO & Web Design</div>
-                <p>
-                  Mida sit una namet, cons uectetur adipiscing adon elit.
-                  Aliquam vitae barasa droma.
-                </p>
-              </div>
+        <div class="archiving_flex">
+          <div
+            class="archiving_box"
+            onclick="location.href='https://bio-info.tistory.com/';"
+          >
+            <div class="archiving_image">
+              <img
+                src="images/demo/tistory.png"
+                class="img-responsive"
+                alt="author"
+              />
+            </div>
+            <div class="archiving_link">
+              <a href="https://bio-info.tistory.com/">bio-info.tistory.com/</a>
+            </div>
+            <div class="archiving_description">
+              <p>
+                회사 입사하면서 시작한 블로그입니다. 공부 및 지식 공유 목적의
+                블로그입니다.
+              </p>
+              <ul>
+                <li>공부한 것을 진정한 나의 것으로 만들기 위한 기록</li>
+                <li>웹 개발자의 길을 걸으며 공부한 웹 관련 지식 정리</li>
+                <li>학부 시절 배운 전공 수업들의 내용 복습 겸 정리</li>
+                <li>지식 공유를 통한 선한 영향력 행사</li>
+              </ul>
             </div>
           </div>
-          <!-- end team member item -->
-          <!-- team member item -->
-          <div class="col-md-4">
-            <div class="team-item">
-              <div class="team-image">
-                <img
-                  src="images/demo/author-6.jpg"
-                  class="img-responsive"
-                  alt="author"
-                />
-              </div>
-              <div class="team-text">
-                <h3>LINA GOSATA</h3>
-                <div class="team-position">Photography</div>
-                <p>
-                  Worsa dona namet, cons uectetur dipiscing adon elit. Aliquam
-                  vitae fringilla unda mir.
-                </p>
-              </div>
+
+          <div
+            class="archiving_box"
+            onclick="location.href='https://github.com/netsus';"
+          >
+            <div class="archiving_image">
+              <img
+                src="images/demo/github.png"
+                class="img-responsive"
+                alt="author"
+              />
+            </div>
+            <div class="archiving_link">
+              <a href="https://github.com/netsus">github.com/netsus/</a>
+            </div>
+            <div class="archiving_description">
+              <p>깃허브 잔디보소 소스코드 저장소입니다.</p>
+              <ul>
+                <li>공부한 것을 진정한 나의 것으로 만들기 위한 기록</li>
+                <li>웹 개발자의 길을 걸으며 공부한 웹 관련 지식 정리</li>
+                <li>학부 시절 배운 전공 수업들의 내용 복습 겸 정리</li>
+                <li>지식 공유를 통한 선한 영향력 행사</li>
+              </ul>
             </div>
           </div>
-          <!-- end team member item -->
-          <!-- team member item -->
-          <div class="col-md-4">
-            <div class="team-item">
-              <div class="team-image">
-                <img
-                  src="images/demo/author-4.jpg"
-                  class="img-responsive"
-                  alt="author"
-                />
-              </div>
-              <div class="team-text">
-                <h3>John BEKERS</h3>
-                <div class="team-position">Marketing</div>
-                <p>
-                  Dolor sit don namet, cons uectetur beriscing adon elit.
-                  Aliquam vitae fringilla unda.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- end team member item -->
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="section-title">
-              <h2>Contact Us</h2>
-              <p>
-                If you have some Questions or need Help! Please Contact Us!<br />We
-                make Cool and Clean Design for your Business
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <form name="sentMessage" id="contactForm" novalidate="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name *"
-                      id="name"
-                      required=""
-                      data-validation-required-message="Please enter your name."
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Your Email *"
-                      id="email"
-                      required=""
-                      data-validation-required-message="Please enter your email address."
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea
-                      class="form-control"
-                      placeholder="Your Message *"
-                      id="message"
-                      required=""
-                      data-validation-required-message="Please enter a message."
-                    ></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button type="submit" class="btn">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
     <p id="back-top">
       <a href="#top"><i class="fa fa-angle-up"></i></a>
     </p>
     <footer>
-      <div class="container text-center">
+      <div class="text-center">
         <p>
-          Designed by
-          <a href="http://moozthemes.com"><span>MOOZ</span>Themes.com</a>
+          2021.
+          <span>Cho</span>Wonjun
         </p>
       </div>
     </footer>
@@ -472,6 +359,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title" id="Modal-label-1">에어비앤비 클론</h4>
             <button
               type="button"
               class="close"
@@ -480,7 +368,6 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="Modal-label-1">Dean & Letter</h4>
           </div>
           <div class="modal-body">
             <img
@@ -489,11 +376,41 @@
               class="img-responsive"
             />
             <div class="modal-works">
-              <span>Branding</span><span>Web Design</span>
+              <span>Django</span><span>Tailwind CSS</span>
+              <span>python</span>
             </div>
             <p>
               Temporibus autem quibusdam et aut officiis debitis aut rerum
-              necessitatibus saepe
+              necessitatibus saepe Temporibus autem quibusdam et aut officiis
+              debitis aut rerum necessitatibus saepeTemporibus autem quibusdam
+              et aut officiis debitis aut rerum necessitatibus saepeTemporibus
+              autem quibusdam et aut officiis debitis aut rerum necessitatibus
+              saepeTemporibus autem quibusdam et aut officiis debitis aut rerum
+              necessitatibus saepeTemporibus autem quibusdam et aut officiis
+              debitis aut rerum necessitatibus saepe Temporibus autem quibusdam
+              et aut officiis debitis aut rerum necessitatibus saepe Temporibus
+              autem quibusdam et aut officiis debitis aut rerum necessitatibus
+              saepeTemporibus autem quibusdam et aut officiis debitis aut rerum
+              necessitatibus saepeTemporibus autem quibusdam et aut officiis
+              debitis aut rerum necessitatibus saepeTemporibus autem quibusdam
+              et aut officiis debitis aut rerum necessitatibus saepeTemporibus
+              autem quibusdam et aut officiis debitis aut rerum necessitatibus
+              saepeTemporibus autem quibusdam et aut officiis debitis aut rerum
+              necessitatibus saepe Temporibus autem quibusdam et aut officiis
+              debitis aut rerum necessitatibus saepeTemporibus autem quibusdam
+              et aut officiis debitis aut rerum necessitatibus saepeTemporibus
+              autem quibusdam et aut officiis debitis aut rerum necessitatibus
+              saepeTemporibus autem quibusdam et aut officiis debitis aut rerum
+              necessitatibus saepeTemporibus autem quibusdam et aut officiis
+              debitis aut rerum necessitatibus saepeTemporibus autem quibusdam
+              et aut officiis debitis aut rerum necessitatibus saepe Temporibus
+              autem quibusdam et aut officiis debitis aut rerum necessitatibus
+              saepeTemporibus autem quibusdam et aut officiis debitis aut rerum
+              necessitatibus saepeTemporibus autem quibusdam et aut officiis
+              debitis aut rerum necessitatibus saepeTemporibus autem quibusdam
+              et aut officiis debitis aut rerum necessitatibus saepeTemporibus
+              autem quibusdam et aut officiis debitis aut rerum necessitatibus
+              saepe
             </p>
           </div>
           <div class="modal-footer">
@@ -516,6 +433,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title" id="Modal-label-2">Startup Framework</h4>
             <button
               type="button"
               class="close"
@@ -524,7 +442,6 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="Modal-label-2">Startup Framework</h4>
           </div>
           <div class="modal-body">
             <img
@@ -560,6 +477,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title" id="Modal-label-3">Lamp & Velvet</h4>
             <button
               type="button"
               class="close"
@@ -568,11 +486,10 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="Modal-label-3">Lamp & Velvet</h4>
           </div>
           <div class="modal-body">
             <img
-              src="images/demo/portfolio-3.jpg"
+              src="images/demo/portfolio-3.png"
               alt="img01"
               class="img-responsive"
             />
@@ -604,6 +521,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title" id="Modal-label-4">Smart Name</h4>
             <button
               type="button"
               class="close"
@@ -612,7 +530,6 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="Modal-label-4">Smart Name</h4>
           </div>
           <div class="modal-body">
             <img
@@ -648,6 +565,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
+            <h4 class="modal-title" id="Modal-label-5">Fast People</h4>
             <button
               type="button"
               class="close"
@@ -656,7 +574,6 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="Modal-label-5">Fast People</h4>
           </div>
           <div class="modal-body">
             <img
@@ -680,11 +597,51 @@
         </div>
       </div>
     </div>
-    -->
 
-    <!-- Bootstrap core JavaScript
-			================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Modal for portfolio item 6 -->
+    <div
+      class="modal fade"
+      id="Modal-6"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="Modal-label-6"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="Modal-label-6">Smart Name</h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/demo/portfolio-6.jpg"
+              alt="img06"
+              class="img-responsive"
+            />
+            <div class="modal-works">
+              <span>Branding</span><span>Web Design</span>
+            </div>
+            <p>
+              Temporibus autem quibusdam et aut officiis debitis aut rerum
+              necessitatibus saepe
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/SmoothScroll.js"></script>
