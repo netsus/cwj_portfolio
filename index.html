@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -89,8 +90,8 @@
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
                 <img
-                  src="images/demo/portfolio-1.jpg"
-                  alt="img02"
+                  src="images/projects/django_airbnb.png"
+                  alt="img01"
                   class="img-responsive"
                 />
                 <figcaption>
@@ -108,7 +109,7 @@
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
                 <img
-                  src="images/demo/portfolio-2.jpg"
+                  src="images/projects/django_movie.png"
                   alt="img02"
                   class="img-responsive"
                 />
@@ -127,8 +128,8 @@
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
                 <img
-                  src="images/demo/portfolio-3.png"
-                  alt="img02"
+                  src="images/projects/flask_job.png"
+                  alt="img03"
                   class="img-responsive"
                 />
                 <figcaption>
@@ -146,8 +147,8 @@
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
                 <img
-                  src="images/demo/portfolio-4.jpg"
-                  alt="img02"
+                  src="images/projects/front_kakao.png"
+                  alt="img04"
                   class="img-responsive"
                 />
                 <figcaption>
@@ -165,12 +166,12 @@
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
                 <img
-                  src="images/demo/portfolio-5.jpg"
-                  alt="img02"
+                  src="images/projects/js_todo.png"
+                  alt="img05"
                   class="img-responsive"
                 />
                 <figcaption>
-                  <h2>개발자 직업 db화</h2>
+                  <h2>자바스크립트 투두리스트</h2>
                   <p>Branding, Web Design</p>
                   <a href="#" data-toggle="modal" data-target="#Modal-5"
                     >View more</a
@@ -184,12 +185,12 @@
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
                 <img
-                  src="images/demo/portfolio-6.jpg"
+                  src="images/projects/js_paint.png"
                   alt="img02"
                   class="img-responsive"
                 />
                 <figcaption>
-                  <h2>쿠팡재고알림 카톡보내기</h2>
+                  <h2>자바스크립트 그림판</h2>
                   <p>Branding, Web Design</p>
                   <a href="#" data-toggle="modal" data-target="#Modal-6"
                     >View more</a
@@ -220,9 +221,11 @@
           <div class="skills_column" id="content_1">
             <img src="images/skills/html.png" alt="" />
             <img src="images/skills/css.png" alt="" />
+            <img src="images/skills/Tailwind.png" alt="" />
+            <img src="images/skills/sass.jpeg" alt="" />
             <img src="images/skills/JS.png" alt="" />
             <img src="images/skills/react.png" alt="" />
-            <img src="images/skills/Tailwind.png" alt="" />
+
           </div>
 
           <!-- end about module -->
@@ -236,6 +239,7 @@
             <img src="images/skills/Django.png" alt="" />
             <img src="images/skills/python.png" alt="" />
             <img src="images/skills/pandas.png" alt="" />
+            <img src="images/skills/flask.png" alt="" />
             <img src="images/skills/mariadb.png" alt="" />
             <img src="images/skills/postgre.png" alt="" />
           </div>
@@ -371,13 +375,28 @@
           </div>
           <div class="modal-body">
             <img
-              src="images/demo/portfolio-1.jpg"
+              src="images/projects/django_airbnb.png"
               alt="img01"
               class="img-responsive"
             />
             <div class="modal-works">
-              <span>Django</span><span>Tailwind CSS</span>
-              <span>python</span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Django-092e20?style=flat&logo=django&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/HTML-e34f26?style=flat&logo=html5&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Naver Cloud-03C75A?style=flat&logo=naver&logoColor=white"/></span>
+            </div>
+            <div class="project_links">
+              <div class="project_links__box">
+                <i class="fab fa-envira"></i>
+                <span>사이트</span>
+                <a href="http://118.67.143.211:8000/">CWJ Travel Link</a>
+              </div>
+              <div class="project_links__box">
+                <i class="fab fa-envira"></i>
+                <span>Github</span>
+                <a href="https://github.com/netsus/CWJ_Travel">github.com/netsus/CWJ_Travel</a>
+              </div>
             </div>
             <p>
               Temporibus autem quibusdam et aut officiis debitis aut rerum
@@ -445,13 +464,31 @@
           </div>
           <div class="modal-body">
             <img
-              src="images/demo/portfolio-2.jpg"
+              src="images/projects/django_movie.png"
               alt="img01"
               class="img-responsive"
             />
             <div class="modal-works">
-              <span>Branding</span><span>Web Design</span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Django-092e20?style=flat&logo=django&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/HTML-e34f26?style=flat&logo=html5&logoColor=white"/></span>
+              <span class="project_skills"><img src="https://img.shields.io/badge/Naver Cloud-03C75A?style=flat&logo=naver&logoColor=white"/></span>
             </div>
+            <div class="project_links">
+              
+              <div class="project_links__box">
+                <i class="fab fa-envira"></i>
+                <span>사이트</span>
+                <a href="http://118.67.143.211:8001/">CWJ Travel Link</a>
+              </div>
+              <div class="project_links__box">
+                <i class="fab fa-envira"></i>
+                <span>Github</span>
+                <a href="https://github.com/netsus/movie_book_service">github.com/netsus/movie_book_service</a>
+              </div>
+              </div>
+              
             <p>
               Temporibus autem quibusdam et aut officiis debitis aut rerum
               necessitatibus saepe
