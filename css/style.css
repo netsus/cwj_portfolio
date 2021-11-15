@@ -611,6 +611,10 @@ footer p a span {
 
 .modal-body {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-body p {
@@ -619,8 +623,8 @@ footer p a span {
   text-align: justify;
 }
 .modal-body img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
 .modal-works {
