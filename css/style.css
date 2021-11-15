@@ -360,8 +360,12 @@ figcaption {
 /* hj 프로젝트 배경이미지 스타일 설정 */
 figure.effect-bubba {
   background: linear-gradient(
-    rgba(112, 93, 80, 0.8) 0px,
-    rgba(112, 93, 80, 0.8) 90%
+    rgba(109, 95, 82, 0.8) 0%,
+    rgb(26, 24, 24) 40%,
+
+    rgba(14, 11, 11, 0.8) 90%,
+    rgba(97, 47, 47, 0.8) 100%
+
   );
 
   background-position-x: initial, 50%;
@@ -630,7 +634,9 @@ footer p a span {
 
 .modal-works span {
   /* background-color: #ea8685; */
-  margin-right: 0.8rem;
+  /* margin-right: 0.8rem; */
+  margin-bottom: 0.8rem;
+
   /* padding: 5px 10px; */
   width: 10rem;
   height: 3rem;
@@ -638,6 +644,8 @@ footer p a span {
 .project_skills img{
   width: 9rem;
   height: 3rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 .project_links{
 
