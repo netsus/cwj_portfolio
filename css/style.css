@@ -54,12 +54,6 @@ a.active {
   background: #ea8685;
 }
 
-/* @media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
-} */
-
 section {
   padding: 35px 0 60px;
 }
@@ -172,6 +166,9 @@ section {
     padding-top: 15px;
     padding-bottom: 4px;
   }
+  .modal-dialog {
+    width: auto;
+    margin: 0;
 }
 
 /*--------------------
@@ -216,6 +213,12 @@ section {
   margin: 20px 0;
   font-size: 37px;
 }
+#about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 .skills_collect {
   display: flex;
   flex-wrap: wrap;
@@ -531,12 +534,12 @@ figure.effect-bubba:hover p {
   margin-bottom: 2rem;
 }
 .archiving_description {
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 .archiving_description p {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 .archiving_description ul {
   font-size: 1.6rem;
@@ -598,9 +601,19 @@ footer p a span {
 6. Modal
 --------------------*/
 
+.modal{
+  width: 70vw;
+  left:15vw;
+  top:10vh;
+  bottom:10vh;
+}
 .modal-content {
-  border-radius: 0.4rem;
-  width: 60rem;
+  border-radius: 0;
+  width: 70vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 .modal-header {
   display: flex;
@@ -636,6 +649,7 @@ footer p a span {
   margin: 30px 30px;
   color: #2d2d2d;
   text-align: justify;
+  line-break: pre-line;
 }
 .modal-body img {
   width: 90%;
@@ -673,7 +687,9 @@ footer p a span {
   padding-top: 3rem;
   font-size: 1.8rem;
   font-weight: 400;
-  border-top: 1px solid #d2c2c2;
+  border-top: 1px solid #e9dddd;
+  border-bottom: 1px solid #e9dddd;
+
 }
 .project_links__box{
   margin-bottom: 1rem;
@@ -793,6 +809,8 @@ HJ working on this
       rgba(104, 69, 69, 0.8) 90%
     ),
     url('./images/laptop.jpg');
+  /* height: 100vh; */
+  width: fit-content;
   background-position-x: initial, 50%;
   background-position-y: initial, center;
   border-radius: 0;
@@ -889,6 +907,7 @@ HJ working on this
 
 #portfolio {
   background-color: #ea8685;
+  /* width: fit-content; */
 }
 .container {
   /* margin: 0; */
@@ -922,8 +941,13 @@ HJ working on this
   font-weight: 900;
 }
 
+#bold{
+  font-weight: 700;
+}
 
-@media only screen and (min-width: 280px) and (max-width: 480px) {
+
+
+@media only screen and (min-width: 280px) and (max-width: 780px) {
   body{
     width: 100vw;
     position:static;
@@ -944,12 +968,12 @@ HJ working on this
   .skills_collect_flex{
     width: 90vw;
   }
-  #about .container{
+  /* #about .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .mz-module-about{
     height: auto;
     padding: 0;
@@ -982,6 +1006,15 @@ HJ working on this
   figure.effect-bubba{
     width: 90vw;
   }
+  figure.effect-bubba h2{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+    /* padding-top: 0; */
+  }
+  figure.effect-bubba img{
+    width: 90vw;
+  }
   .col-lg-12{
     display: flex;
     justify-content: center;
@@ -1008,16 +1041,18 @@ HJ working on this
     width: 90vw;
   }
   .modal{
-    width:90vw;
-    left:5vw;
+    width:80vw;
+    left:10vw;
     top:10vh;
     bottom:10vh;
   }
   .modal-dialog{
     margin: 0;
+    border: none;
   }
   .modal-content{
-    width: 90vw;
+    width: auto;
+    border: none;
   }
   #back-top {
     position: fixed;
