@@ -57,7 +57,7 @@ a.active {
 }
 
 section {
-  padding: 35px 0 60px;
+  padding: 10vh 0 20vh;
 }
 
 /*--------------------
@@ -133,7 +133,7 @@ section {
   background-color: #fec503;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 780px) {
   .navbar-default {
     /* background-color: transparent; */
     /* padding: 50px 0 0px; */
@@ -208,8 +208,10 @@ section {
   color: #ffffff;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  word-break: break-all;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-
 .ot-circle {
   text-align: center;
   color: #e8e8e8;
@@ -229,7 +231,7 @@ section {
     width: 80vw;
   }
 .skills_collect {
-  width: 80vw;
+  width: 60vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: baseline;
@@ -237,14 +239,12 @@ section {
 }
 .skills_collect_flex{
   display: flex;
-  width: 80vw;
-  /* align-items: baseline; */
+  width: 60vw;
   border-bottom: 3px solid #1f2839;
 }
 .skills_collect_flex:nth-child(4){
   border: none;
 }
-
 #skill_1 {
   grid-area: skill_1;
 }
@@ -298,49 +298,6 @@ section {
 .skills-text h2 {
   margin: 0 0 30px;
 }
-/* 
-.skillbar-item {
-  margin-bottom: 30px;
-}
-
-.skillbar-item:last-child {
-  margin-bottom: 60px;
-}
-
-.skillbar {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.skillbar-bar {
-  display: block;
-  background-color: #ffffff;
-  height: 10px;
-  width: 100%;
-  border: 1px solid #d8d8d8;
-  border-radius: 10px;
-} */
-/* 
-.skillbar h3 {
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #3a3a3a;
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 0 0 12px 0;
-}
-
-.skillbar-percent {
-  color: #fff;
-  background-color: #b91919;
-  float: left;
-  height: 4px;
-  margin: 2px 0;
-  border-radius: 10px;
-  border: 1px solid #b91919;
-} */
 
 /*--------------------
 4.3. Portfolio
@@ -349,12 +306,12 @@ section {
 figure.effect-bubba {
   position: relative;
   overflow: hidden;
-  margin: 0 1px 1px 0;
+  margin: 0 2rem 2rem 0;
   /* background: #726fb9; */
   text-align: center;
   cursor: pointer;
-  width: 38vw;
-  height: 35vh;
+  /* width: 32vw;
+  height: 37vh; */
   background: linear-gradient(
     rgba(109, 95, 82, 0.8) 0%,
     rgb(26, 24, 24) 40%,
@@ -363,10 +320,10 @@ figure.effect-bubba {
     rgba(97, 47, 47, 0.8) 100%
 
   );
-
   background-position-x: initial, 50%;
   background-position-y: initial, center;
-  margin-bottom: 1px;
+  border-radius: 1rem;
+  border: 1px solid #837a7a;
 }
 
 figcaption {
@@ -399,8 +356,8 @@ figure.effect-bubba img {
   opacity: 0.5;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
-  width: 38vw;
-  height: 34rem;
+  width: 32vw;
+  height: 41vh;
 }
 
 figure.effect-bubba:hover img {
@@ -434,11 +391,7 @@ figure.effect-bubba figcaption::after {
   transform: scale(1, 0);
 }
 /* hj 프로젝트 style 변경 */
-.effect-bubba figcaption {
-  /* display: flex-column;
-  justify-content: center;
-  align-items: flex-start; */
-}
+
 figure.effect-bubba h2 {
   color: #ffffff;
   font-size: 4rem;
@@ -519,15 +472,19 @@ figure.effect-bubba:hover p {
 }
 
 .archiving_box {
-  width: 50rem;
+  width: 26vw;
+  height: 33vh;
   padding: 3rem;
   border-radius: 1rem;
   background-color: #f5f5f5;
   cursor: pointer;
   margin-bottom: 10px;
 }
+.archiving_box:first-child{
+  margin-right: 2rem;
+}
 .archiving_box:hover {
-  background-color: #ebebeb;
+  background-color: #dddada;
 }
 .archiving_image {
   width: 18rem;
@@ -820,13 +777,22 @@ HJ working on this
   border-radius: 0;
 }
 .navbar .container {
+  flex-direction: row;
+  justify-content: space-between;
   width: 100vw;
   padding: 2rem 4rem;
+}
+.container::before, .container::after{
+  content: none;
+}
+.navbar-header::after, .navbar-header::before{
+  content:none;
 }
 .navbar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 .navbar-header .navbar-brand {
   margin-left: 0;
@@ -853,16 +819,18 @@ HJ working on this
   font-size: 50px;
 }
 
-#nav_logo {
-  margin: 0;
-  text-align: center;
-}
+
 #nav_logo,
 #navbar_right {
   color: #d2c2c2;
   font-weight: 500;
+  font-size: 1.8vh;
 }
-
+#nav_logo {
+  margin: 0;
+  text-align: center;
+  font-size: 3vh;
+}
 .container2 {
   display: flex;
   flex-direction: column;
@@ -892,29 +860,22 @@ HJ working on this
   line-height: 4rem;
 }
 
-/* .project_grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, auto));
-  align-content: stretch;
-} */
 .project_flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .col-md-6 {
-  width: 38vw;
-  height: 35vh;
-  margin-right: 4px;
-  margin-bottom: 4px;
+  width: 32vw;
+  height: 43vh;
+  /* margin-right: 4px; */
+
 }
 
 #portfolio {
   background-color: #ea8685;
-  /* width: fit-content; */
 }
 .container {
-  /* margin: 0; */
   padding: 0;
 }
 #about {
@@ -952,7 +913,7 @@ HJ working on this
 
 
 
-@media only screen and (min-width: 280px) and (max-width: 768px) {
+@media only screen and (min-width: 280px) and (max-width: 770px) {
   body{
     width: 100vw;
     /* position:static; */
@@ -961,11 +922,15 @@ HJ working on this
     background-size: initial;
     border: none;
   }
+  
   .navbar .container{
     padding:20px;
+    flex-direction: column;
   }
+  
   .navbar-header{
     width: 100vw;
+    padding:0 20px;
   }
   .navbar-brand{
     height: auto;
@@ -977,7 +942,10 @@ HJ working on this
   }
   .navbar-toggle{
     margin:0;
-    margin-left: 15vw;
+  }
+  .container>.navbar-header{
+    margin-right: 0;
+    margin-left: 0;
   }
   .skills_collect{
     display: flex;
@@ -987,12 +955,7 @@ HJ working on this
   .skills_collect_flex{
     width: 80vw;
   }
-  /* #about .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
+
   .mz-module-about{
     height: auto;
     padding: 0;
@@ -1007,8 +970,6 @@ HJ working on this
   .skills_column{
     display:flex;
     flex-wrap: wrap;
-    /* width: 100vw; */
-    /* height: auto; */
   }
   .project_grid{
     display: flex;
@@ -1026,7 +987,7 @@ HJ working on this
     height: 33vh;
   }
   .col-md-6{
-    height: 33vh;
+    height: 35vh;
   }
   figure.effect-bubba h2{
     font-size: 30px;
@@ -1035,7 +996,7 @@ HJ working on this
     /* padding-top: 0; */
   }
   figure.effect-bubba img{
-    width: 90vw;
+    width: 80vw;
     height: 33vh;
   }
   
@@ -1063,6 +1024,20 @@ HJ working on this
   }
   .archiving_flex{
     width: 80vw;
+  }
+  .archiving_box{
+    width: 80vw;
+    height: 33vh;
+  }
+  .archiving_image{
+    width: 28vw;
+    margin-bottom: 1.2vh;
+  }
+  .archiving_link{
+    margin-bottom: 1vh;
+  }
+  .archiving_description p{
+    font-size: 2vh;
   }
   .modal{
     width:80vw;
