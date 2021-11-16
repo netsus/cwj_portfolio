@@ -5,6 +5,8 @@ Import Google Fonts
 /* main font for menu. */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400|Raleway:200,300,400,500,700,900);
 
+
+
 /*--------------------
 1. General
 --------------------*/
@@ -82,7 +84,7 @@ section {
 }
 .navbar-default .navbar-brand {
   color: #fff;
-  padding: 5px;
+  /* padding: 5px; */
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -169,6 +171,7 @@ section {
   .modal-dialog {
     width: auto;
     margin: 0;
+  }
 }
 
 /*--------------------
@@ -191,11 +194,11 @@ section {
 
 .mz-module-about {
   background-color: #3f3d3d;
-  padding: 2rem 4rem;
+  padding: 0;
   text-align: center;
-  width: 20rem;
-  height: 16rem;
-
+  width: 15vw;
+  height: auto;
+  
 }
 
 .mz-module-about h3 {
@@ -213,34 +216,35 @@ section {
   margin: 20px 0;
   font-size: 37px;
 }
-#about .container{
+#about, #portfolio, #team{
+  display: flex;
+  justify-content: center;
+}
+.container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    width: 80vw;
   }
 .skills_collect {
+  width: 80vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: baseline;
-  /* align-items: baseline; */
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto-fit);
-  grid-template-areas:
-    "skill_1 skill_2 skill_3 skill_4"
-    "content_1 content_2 content_3 content_4";
-  grid-gap: 0.5rem; */
+  
 }
 .skills_collect_flex{
   display: flex;
+  width: 80vw;
   /* align-items: baseline; */
   border-bottom: 3px solid #1f2839;
 }
 .skills_collect_flex:nth-child(4){
   border: none;
 }
-/* 
+
 #skill_1 {
   grid-area: skill_1;
 }
@@ -274,15 +278,16 @@ section {
 .skills_column {
   background-color: white;
   display: flex;
-  /* flex-direction: column; */
+  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
-  width: 92rem;
-  height: 16rem;
+  width: 65vw;
+  height: auto;
 }
 .skills_column img {
   width: auto;
-  height: 12rem;
+  height: 12vh;
   padding: 2rem;
   display: block;
 }
@@ -348,8 +353,20 @@ figure.effect-bubba {
   /* background: #726fb9; */
   text-align: center;
   cursor: pointer;
-  width: 58rem;
-  height: 34rem;
+  width: 38vw;
+  height: 35vh;
+  background: linear-gradient(
+    rgba(109, 95, 82, 0.8) 0%,
+    rgb(26, 24, 24) 40%,
+
+    rgba(14, 11, 11, 0.8) 90%,
+    rgba(97, 47, 47, 0.8) 100%
+
+  );
+
+  background-position-x: initial, 50%;
+  background-position-y: initial, center;
+  margin-bottom: 1px;
 }
 
 figcaption {
@@ -376,26 +393,13 @@ figcaption {
   height: 100%;
 }
 /* hj 프로젝트 배경이미지 스타일 설정 */
-figure.effect-bubba {
-  background: linear-gradient(
-    rgba(109, 95, 82, 0.8) 0%,
-    rgb(26, 24, 24) 40%,
 
-    rgba(14, 11, 11, 0.8) 90%,
-    rgba(97, 47, 47, 0.8) 100%
-
-  );
-
-  background-position-x: initial, 50%;
-  background-position-y: initial, center;
-  margin-bottom: 1px;
-}
 
 figure.effect-bubba img {
   opacity: 0.5;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
-  width: 58rem;
+  width: 38vw;
   height: 34rem;
 }
 
@@ -799,7 +803,7 @@ HJ working on this
 ----------------------------------------*/
 
 .navbar {
-  /* background-image: url("https://cdn.pixabay.com/photo/2017/07/31/11/44/laptop-2557572_960_720.jpg"); */
+  
   background-size: cover;
   padding-bottom: 20px;
   margin-bottom: 0;
@@ -809,7 +813,7 @@ HJ working on this
       rgba(104, 69, 69, 0.8) 90%
     ),
     url('./images/laptop.jpg');
-  /* height: 100vh; */
+
   width: fit-content;
   background-position-x: initial, 50%;
   background-position-y: initial, center;
@@ -899,8 +903,8 @@ HJ working on this
   justify-content: center;
 }
 .col-md-6 {
-  width: 58rem;
-  height: 34rem;
+  width: 38vw;
+  height: 35vh;
   margin-right: 4px;
   margin-bottom: 4px;
 }
@@ -947,26 +951,41 @@ HJ working on this
 
 
 
-@media only screen and (min-width: 280px) and (max-width: 780px) {
+
+@media only screen and (min-width: 280px) and (max-width: 768px) {
   body{
     width: 100vw;
-    position:static;
+    /* position:static; */
   }
   .navbar{
-    /* width: 100vw; */
     background-size: initial;
     border: none;
   }
-  /* .container{
+  .navbar .container{
+    padding:20px;
+  }
+  .navbar-header{
     width: 100vw;
-  } */
+  }
+  .navbar-brand{
+    height: auto;
+    padding: 0;
+    display: block;
+  }
+  .navbar-brand h1{
+    font-size: 2.3rem;
+  }
+  .navbar-toggle{
+    margin:0;
+    margin-left: 15vw;
+  }
   .skills_collect{
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 80vw;
   }
   .skills_collect_flex{
-    width: 90vw;
+    width: 80vw;
   }
   /* #about .container{
     display: flex;
@@ -977,7 +996,7 @@ HJ working on this
   .mz-module-about{
     height: auto;
     padding: 0;
-    width: 40vw;
+    width: 15vw;
   }
   .mz-module-about h3{
     word-break: break-all;
@@ -988,8 +1007,8 @@ HJ working on this
   .skills_column{
     display:flex;
     flex-wrap: wrap;
-    width: 100vw;
-    height: auto;
+    /* width: 100vw; */
+    /* height: auto; */
   }
   .project_grid{
     display: flex;
@@ -997,14 +1016,17 @@ HJ working on this
     align-items: center;
   }
   .project_flex{
-    width: 90vw;
+    width: 80vw;
     align-items: center;
   }
-  .col-md-6, .ot-portfolio-item, .effect-bubba, .effect-bubba img{
-    width: 90vw;
+  .col-md-6, .ot-portfolio-item, figure.effect-bubba, .effect-bubba img{
+    width: 80vw;
   }
   figure.effect-bubba{
-    width: 90vw;
+    height: 33vh;
+  }
+  .col-md-6{
+    height: 33vh;
   }
   figure.effect-bubba h2{
     font-size: 30px;
@@ -1014,7 +1036,9 @@ HJ working on this
   }
   figure.effect-bubba img{
     width: 90vw;
+    height: 33vh;
   }
+  
   .col-lg-12{
     display: flex;
     justify-content: center;
@@ -1038,7 +1062,7 @@ HJ working on this
     align-items: center;
   }
   .archiving_flex{
-    width: 90vw;
+    width: 80vw;
   }
   .modal{
     width:80vw;
@@ -1068,3 +1092,7 @@ HJ working on this
     font-size: 20px;
   }
 }
+
+
+
+
