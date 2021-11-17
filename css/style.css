@@ -1029,6 +1029,9 @@ HJ working on this
     width: 80vw;
     height: 33vh;
   }
+  .archiving_box:first-child{
+    margin-right: 0;
+  }
   .archiving_image{
     width: 28vw;
     margin-bottom: 1.2vh;
